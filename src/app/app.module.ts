@@ -3,8 +3,9 @@ import { NgModule, ErrorHandler, NO_ERRORS_SCHEMA } from '@angular/core';
 
 // Material Design
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+// routing
 import { AppRoutingModule } from './app-routing.module';
-
+// components 
 import { AppComponent } from './app.component';
 // service
 import { ErrorHandlerService } from './service/error-handler.service';
@@ -18,9 +19,7 @@ import { ErrorHandlerService } from './service/error-handler.service';
     AppRoutingModule,
     MDBBootstrapModule.forRoot()
   ],
-  schemas: [
-    NO_ERRORS_SCHEMA
-  ],
+  schemas: [ NO_ERRORS_SCHEMA ],
   providers: [
     {provide: ErrorHandler, useClass: ErrorHandlerService}
   ],
