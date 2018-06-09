@@ -5,33 +5,33 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 npm i --save angular-bootstrap-md chart.js@2.5.0 font-awesome hammerjs 
   
 #### Add to app.module.ts  
-import { MDBBootstrapModule } from 'angular-bootstrap-md';  
-import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core'; This tells the compiler to not error based on unknown elements which are used in MdBootstrap.  
-#### Then in @NgModule  
-imports: [
-    BrowserModule,
-    MDBBootstrapModule.forRoot()
-  ],
-  schemas: [ NO_ERRORS_SCHEMA ],  
-#### Next in /angular-cli.json  
-"styles": [
-  "../node_modules/font-awesome/scss/font-awesome.scss",
-  "../node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
-  "../node_modules/angular-bootstrap-md/scss/mdb-free.scss",
-  "styles.scss"
-],
-"scripts": [
-  "../node_modules/chart.js/dist/Chart.js",
-  "../node_modules/hammerjs/hammer.min.js"
+import { MDBBootstrapModule } from 'angular-bootstrap-md';    
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core'; This tells the compiler to not error based on   unknown elements which are used in MdBootstrap.    
+#### Then in @NgModule    
+imports: [  
+    BrowserModule,  
+    MDBBootstrapModule.forRoot()  
+  ],  
+  schemas: [ NO_ERRORS_SCHEMA ],    
+#### Next in /angular-cli.json    
+"styles": [  
+  "../node_modules/font-awesome/scss/font-awesome.scss",  
+  "../node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",  
+  "../node_modules/angular-bootstrap-md/scss/mdb-free.scss",  
+  "styles.scss"  
 ],  
+"scripts": [  
+  "../node_modules/chart.js/dist/Chart.js",  
+  "../node_modules/hammerjs/hammer.min.js"  
+],    
 #### Last in /tsconfig.json  
-{
-  "compileOnSave": // removed for brevity,
-  "compilerOptions": {
-    // removed for brevity
-  },
-  "include": ["node_modules/angular-bootstrap-md/**/*.ts",  "src/**/*.ts"] // add this line
-}  
+{  
+  "compileOnSave": // removed for brevity,  
+  "compilerOptions": {  
+    // removed for brevity  
+  },  
+  "include": ["node_modules/angular-bootstrap-md/**/*.ts",  "src/**/*.ts"] // add this line  
+}    
 
 ## Development server
 
