@@ -34,7 +34,7 @@ imports: [
 }    
   
 ### Home page  
-[!alt text](https://github.com/abenjamin1313/mdb-angular5/blob/master/pics/home-page.png)
+![alt text](https://github.com/abenjamin1313/mdb-angular5/blob/master/pics/home-page.png)
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
